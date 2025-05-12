@@ -1,48 +1,17 @@
 "use strict";
-/* console.log("Hello World"); */
+const $form = document.getElementById("form");
+if ($form) {
+	$form.addEventListener("submit", (event) => {
+		event.preventDefault();
+		const nombre = $form.nombre.value;
+		const apellido = $form.apellido.value;
+		const email = $form.email.value;
+		const cel = $form.cel.value;
+		const mensaje = $form.mensaje.value;
 
-/* FUNCIONES */
-/*
-function printHello() {
-	console.log("Hello");
+		const result = `Gracias por tu mensaje ${nombre} ${apellido} ! Proximamente te estaremos respondiendo a tu correo ${email} o contactando a tu número ${cel}`;
+		alert(result);
+
+		$form.reset();
+	});
 }
-
-printHello();
-
-function printGreeting(greeting) {
-	console.log(greeting);
-}
-
-printGreeting("holi");
-*/
-/* Crear 4 funciones que lean do números y cada función deberá realizar una operación aritmética básica + - / *
-imprimir en consola el resultado así: 10 + 5 = 15 
-*/
-const num1 = 10;
-const num2 = 5;
-let res;
-
-function suma() {
-	res = num1 + num2;
-	console.log(`${num1} + ${num2} = ${res}  `);
-}
-
-function resta() {
-	res = num1 - num2;
-	console.log(`${num1} - ${num2} = ${res}  `);
-}
-
-function multi() {
-	res = num1 * num2;
-	console.log(`${num1} x ${num2} = ${res}  `);
-}
-
-function divi() {
-	res = num1 / num2;
-	console.log(`${num1} / ${num2} = ${res}  `);
-}
-
-suma();
-resta();
-multi();
-divi();

@@ -13,7 +13,6 @@
 			href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap"
 			rel="stylesheet"
 		/>
-
 		<!-- icon -->
 		<link
 			rel="sthortcut icon"
@@ -21,7 +20,7 @@
 			type="image/x-icon"
 		/>
 
-		<title>La Manofactory</title>
+		<title>Contacto</title>
 	</head>
 	<body>
 		<noscript>Javascript is mandatory</noscript>
@@ -69,7 +68,7 @@
 									<div class="collapse navbar-collapse w-100" id="navbarNav">
 										<ul class="navbar-nav mx-auto text-center">
 											<li class="nav-item">
-												<a class="nav-link button active" href="./index.html"
+												<a class="nav-link button" href="./index.html"
 													>Inicio</a
 												>
 											</li>
@@ -108,85 +107,67 @@
 					<!-- carousel -->
 					<div class="borde2 row">
 						<div class="borde col"></div>
-						<div class="borde col-10 col-md-8">
-							<div class="carousel-wrapper container-fluid my-4 px-0">
-								<div
-									id="mainCarousel"
-									class="carousel slide"
-									data-bs-ride="carousel"
-								>
-									<div class="carousel-indicators">
-										<button
-											type="button"
-											data-bs-target="#mainCarousel"
-											data-bs-slide-to="0"
-											class="active"
-											aria-current="true"
-											aria-label="Slide 1"
-										></button>
-										<button
-											type="button"
-											data-bs-target="#mainCarousel"
-											data-bs-slide-to="1"
-											aria-label="Slide 2"
-										></button>
-										<button
-											type="button"
-											data-bs-target="#mainCarousel"
-											data-bs-slide-to="2"
-											aria-label="Slide 3"
-										></button>
+						<div class="borde col-10 col-md-10">
+							<div class="contact-form-container">
+								<form id="form" class="row g-3 needs-validation" novalidate>
+									<div class="col-md-6">
+										<label for="nombre" class="form-label">Nombre</label>
+										<input
+											type="text"
+											class="form-control"
+											id="nombre"
+											required
+											placeholder="Escribe tu Nombre"
+										/>
 									</div>
-
-									<!-- Slides -->
-									<div class="carousel-inner">
-										<div class="carousel-item active">
-											<img
-												src="./assets/evento1.jpeg"
-												class="d-block w-100"
-												alt="Slide 1"
-											/>
-										</div>
-										<div class="carousel-item">
-											<img
-												src="./assets/evento2.jpeg"
-												class="d-block w-100"
-												alt="Slide 2"
-											/>
-										</div>
-										<div class="carousel-item">
-											<img
-												src="./assets/evento3.jpeg"
-												class="d-block w-100"
-												alt="Slide 3"
-											/>
-										</div>
+									<div class="col-md-6">
+										<label for="apellido" class="form-label">Apellido</label>
+										<input
+											type="text"
+											class="form-control"
+											id="apellido"
+											required
+											placeholder="Escribe tu apellido"
+										/>
 									</div>
-
-									<!-- Prev/Next Controls -->
-									<button
-										class="carousel-control-prev"
-										type="button"
-										data-bs-target="#mainCarousel"
-										data-bs-slide="prev"
-									>
-										<span
-											class="carousel-control-prev-icon"
-											aria-hidden="true"
-										></span>
-									</button>
-									<button
-										class="carousel-control-next"
-										type="button"
-										data-bs-target="#mainCarousel"
-										data-bs-slide="next"
-									>
-										<span
-											class="carousel-control-next-icon"
-											aria-hidden="true"
-										></span>
-									</button>
-								</div>
+									<div class="col-md-6">
+										<label for="email" class="form-label">Email</label>
+										<input
+											type="email"
+											class="form-control"
+											id="email"
+											required
+											placeholder="Escribe tu correo electronico"
+										/>
+									</div>
+									<div class="col-md-6">
+										<label for="cel" class="form-label"
+											>Número de celular</label
+										>
+										<input
+											type="tel"
+											class="form-control"
+											id="cel"
+											required
+											placeholder="Escribe tu número de celular"
+										/>
+									</div>
+									<div class="col-12">
+										<label for="mensaje" class="form-label">Mensaje</label>
+										<textarea
+											class="form-control"
+											id="mensaje"
+											rows="5"
+											required
+											placeholder="Escribe tu mensaje"
+										></textarea>
+									</div>
+									<div class="col-12 text-end">
+										<button type="submit" class="btn btn-primary">
+											Enviar
+										</button>
+									</div>
+								</form>
 							</div>
 						</div>
 						<div class="borde col"></div>
