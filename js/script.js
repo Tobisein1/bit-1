@@ -9,7 +9,7 @@ if ($form) {
 		const cel = $form.cel.value;
 		const mensaje = $form.mensaje.value;
 
-		const result = `Gracias por tu mensaje ${nombre} ${apellido} ! Proximamente te estaremos respondiendo a tu correo ${email} o contactando a tu número ${cel}`;
+		const result = `Gracias por tu mensaje ${nombre} ${apellido} ! El mensaje que escribiste es "${mensaje}". Proximamente te estaremos respondiendo a tu correo ${email} o contactando a tu número ${cel}`;
 		alert(result);
 
 		$form.reset();
