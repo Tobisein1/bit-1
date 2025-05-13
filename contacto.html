@@ -109,7 +109,9 @@
 						<div class="borde col"></div>
 						<div class="borde col-10 col-md-10">
 							<div class="contact-form-container">
-								<form id="form" class="row g-3 needs-validation" novalidate>
+
+								<form id="form" class="row g-3 needs-validation">
+
 									<div class="col-md-6">
 										<label for="nombre" class="form-label">Nombre</label>
 										<input
@@ -138,6 +140,9 @@
 											id="email"
 											required
 											placeholder="Escribe tu correo electronico"
+
+											pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+
 										/>
 									</div>
 									<div class="col-md-6">
@@ -150,6 +155,10 @@
 											id="cel"
 											required
 											placeholder="Escribe tu número de celular"
+
+											pattern="[0-9]{10,15}"
+											inputmode="numeric"
+
 										/>
 									</div>
 									<div class="col-12">
